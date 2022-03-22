@@ -11,12 +11,23 @@ const App = () => {
     labels: UserData.map((data) => data.nutrients),
     datasets: [
       {
-        label: "鮭魚",
-        data: UserData.map((data) => data.userGain),
+        label: "醋飯",
+        data: UserData.map((data) => data.rice),
         fill: true,
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgb(255, 99, 132)",
         pointBackgroundColor: "rgb(255, 99, 132)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgb(255, 99, 132)",
+      },
+      {
+        label: "鮭魚",
+        data: UserData.map((data) => data.salmon),
+        fill: true,
+        backgroundColor: "rgba(0, 255, 132, 0.2)",
+        borderColor: "rgb(0, 255, 132)",
+        pointBackgroundColor: "rgb(0, 255, 132)",
         pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
         pointHoverBorderColor: "rgb(255, 99, 132)",
@@ -41,7 +52,7 @@ const App = () => {
     r:{
       beginAtZero: true,
       min:0,   
-      max:100,
+      max:50,
     },
     // angleLines: {
     //   color: "rgba(255, 255, 255, .3)",
