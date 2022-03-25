@@ -5,6 +5,7 @@ import LineChart from "./components/LineChart";
 import PieChart from "./components/PieChart";
 import RadarChart from "./components/RadarChart";
 import { UserData } from "./Data";
+import { nuData } from './data01'
 
 const App = () => {
   const [userData, setUserData] = useState({
@@ -12,7 +13,7 @@ const App = () => {
     datasets: [
       {
         label: "醋飯",
-        data: UserData.map((data) => data.rice),
+        data: UserData.map((data) => data.醋飯),
         fill: true,
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgb(255, 99, 132)",
@@ -23,7 +24,7 @@ const App = () => {
       },
       {
         label: "鮭魚",
-        data: UserData.map((data) => data.salmon),
+        data: UserData.map((data) => data.鮭魚),
         fill: true,
         backgroundColor: "rgba(0, 255, 132, 0.2)",
         borderColor: "rgb(0, 255, 132)",
