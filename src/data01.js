@@ -1,4 +1,4 @@
-export const nuData = [
+const nuData = [
   {
     "mtl_id": 1,
     "mtl_name": "醋飯",
@@ -460,3 +460,5 @@ export const nuData = [
     "mtl_calories": 10
   }
 ]
+
+export default nuData;
