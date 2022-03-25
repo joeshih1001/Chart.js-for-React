@@ -8,7 +8,10 @@ import UserData from "./Data";
 import nuData from "./data01";
 
 const App = () => {
-  const data = nuData.map((d) => {
+  const data = nuData.filter(i => {
+    return [8,30,15].includes(i.mtl_id)
+  })
+  .map((d) => {
     const colorA = Math.random() * 255;
     const colorB = Math.random() * 255;
     const colorC = Math.random() * 255;
@@ -69,7 +72,7 @@ const App = () => {
 
   return (
     <div>
-      <div style={{ width: "1000px" }}>
+      <div style={{ width: "600px" }}>
         <RadarChart chartData={userData} options={options} />
       </div>
       {/* <div style={{width:"700px"}}>
